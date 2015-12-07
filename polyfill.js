@@ -65,7 +65,7 @@ defineProperties(SymbolPolyfill, {
 	species: d('', (NativeSymbol && NativeSymbol.species) || SymbolPolyfill('species')),
 	split: d('', (NativeSymbol && NativeSymbol.split) || SymbolPolyfill('split')),
 	toPrimitive: d('', (NativeSymbol && NativeSymbol.toPrimitive) || SymbolPolyfill('toPrimitive')),
-	toStringTag: d('', (NativeSymbol && NativeSymbol.toStringTag) || SymbolPolyfill('toStringTag')),
+	toStringTag: d('', SymbolPolyfill('toStringTag')),
 	unscopables: d('', (NativeSymbol && NativeSymbol.unscopables) || SymbolPolyfill('unscopables'))
 });
 defineProperties(HiddenSymbol.prototype, {
