@@ -64,7 +64,7 @@ defineProperties(SymbolPolyfill, {
 	search: d('', (NativeSymbol && NativeSymbol.search) || SymbolPolyfill('search')),
 	species: d('', (NativeSymbol && NativeSymbol.species) || SymbolPolyfill('species')),
 	split: d('', (NativeSymbol && NativeSymbol.split) || SymbolPolyfill('split')),
-	toPrimitive: d('', (NativeSymbol && NativeSymbol.toPrimitive) || SymbolPolyfill('toPrimitive')),
+	toPrimitive: d('', SymbolPolyfill('toPrimitive')),
 	toStringTag: d('', SymbolPolyfill('toStringTag')),
 	unscopables: d('', (NativeSymbol && NativeSymbol.unscopables) || SymbolPolyfill('unscopables'))
 });
